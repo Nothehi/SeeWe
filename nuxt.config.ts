@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss'],
     ssr: false,
+    experimental: {
+        payloadExtraction: false
+    },
     app: {
         head: {
             title: 'Hossein Nodehi - CV',
