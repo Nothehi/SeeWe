@@ -45,7 +45,7 @@
                         <span class="text-xs">🛠️ #Laravel, #Vuejs, #PostgreSQL, #TDD</span>
                     </li>
                     <li class="flex flex-col mb-5">
-                        <p class="text-lg font-medium underline">Fullstack Developer (Contract)</p>
+                        <p class="text-lg font-medium underline">Backend Developer (Contract)</p>
                         <span class="text-sm">February 2020 – January 2021</span>
                         <p>At <a href="https://www.hamtapay.net/" class="font-medium text-blue-900">Hamta
                                 Payment</a></p>
@@ -94,7 +94,6 @@
                     <li>🔸 OOP, SOLID, Design Pattern, MVC, Clean Code, TDD</li>
                     <li>🔸 Laravel, Lumen, Composer</li>
                     <li>🔸 Vuejs, Tailwind, Npm, Nuxt</li>
-                    <!-- <li>🔸 Python, Django, Flask</li> -->
                     <li>🔸 Agile, Scrum</li>
                 </ul>
             </article>
