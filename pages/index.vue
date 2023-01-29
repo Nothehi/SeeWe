@@ -139,7 +139,10 @@
         </section>
 
         <footer class="pt-2 border-t">
-            <p class="text-center"><span class="transform rotate-180 inline-block">&copy;</span> Copyleft 2023
+            <p class="flex items-center justify-center space-x-1">
+                <span class="transform rotate-180 inline-block">&copy;</span> 
+                <a href="https://en.wikipedia.org/wiki/Copyleft">Copyleft</a>
+                <span>2023</span>
             </p>
         </footer>
     </main>
