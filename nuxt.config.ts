@@ -13,13 +13,15 @@ export default defineNuxtConfig({
             meta: [
                 { name: 'author', content: 'Hossein Nodehi' }
             ],
-            link: [
-                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap' },
-                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Space+Mono&display=swap' },
-            ],
-            style: [
-                { children: '.font-montserrat{font-family: Montserrat}.font-spacemono{font-family: \'Space Mono\'}' }
-            ],
         }
+    },
+    googleFonts: {
+        families: {
+            Montserrat: true,
+            'Space+Mono': true,
+        }
+    },
+    tailwindcss: {
+        exposeConfig: true
     }
 })
