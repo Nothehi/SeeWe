@@ -4,9 +4,6 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxtjs/google-fonts'
     ],
-    experimental: {
-        payloadExtraction: false
-    },
     app: {
         head: {
             title: 'Hossein Nodehi - CV',
