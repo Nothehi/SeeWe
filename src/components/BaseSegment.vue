@@ -1,3 +1,11 @@
+<script setup lang="ts">
+interface Props {
+    title: string
+}
+
+defineProps<Props>()
+</script>
+
 <template>
     <section class="flex md:flex-row flex-col">
         <aside class="md:w-1/5 md:border-r pt-5">
@@ -9,12 +17,3 @@
         </article>
     </section>
 </template>
-
-<script setup>
-defineProps({
-    title: {
-        type: String,
-        requery: true,
-    }
-})
-</script>
