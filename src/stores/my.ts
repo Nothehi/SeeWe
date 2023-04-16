@@ -60,7 +60,7 @@ export const useMy = defineStore('my', () => {
             skills: ['PHP', 'PrestaShop', 'MySQL']
         },
         {
-            title: 'PHP Developer (PartTime)',
+            title: 'PHP Developer (Internship)',
             from: 'June 2018',
             to: 'October 2018',
             company: 'Faraket',
