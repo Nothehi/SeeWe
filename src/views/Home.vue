@@ -8,10 +8,23 @@ const my = useMy()
 </script>
 
 <template>
-    <div>
+    <main class="container w-full px-4 py-8 mx-auto md:px-32">
+        <header class="pb-2 font-montserrat">
+            <h1 class="text-5xl font-medium">Hossein Nodehi 👋</h1>
+            <h6 class="">Backend Developer</h6>
+        </header>
+
+        <navbar class="block py-2 space-x-2 text-xs text-gray-500 divide-x border-y font-spacemono">
+            <a href="mailto: nodehi.work@gmail.com">Email</a>
+            <a class="pl-2" href="https://github.com/nothehi" target="_blank">Github</a>
+            <a class="pl-2" href="https://stackoverflow.com/users/10770469/nothehi" target="_blank">StackOverflow</a>
+            <a class="pl-2" href="https://www.linkedin.com/in/hossein-nodehi-9184b81ba" target="_blank">LinkedIn</a>
+        </navbar>
+
         <BaseSegment title="Skill Summary">
             <ul>
                 <li>🔹 PHP debugging and error tracking</li>
+                <li>🔹 GoLang debugging and error tracking</li>
                 <li>🔹 JavaScript debugging and error tracking</li>
                 <li>🔹 Laravel debugging and error tracking</li>
                 <li>🔹 Laravel package development</li>
@@ -31,25 +44,21 @@ const my = useMy()
 
         <BaseSegment title="Academic Degrees">
             <ul>
-                <ul>
-                    <li v-for="(degree, idx) in my.degrees" :key="idx" class="flex flex-col mb-5">
-                        <p v-if="degree.finished" class="font-medium">{{ degree.grade }}</p>
-                        <p v-else class="font-medium">🎓 {{ degree.grade }}</p>
-                        <span class="text-sm">📅 {{ degree.from }} – {{ degree.to }}</span>
-                        <span>🏫 {{ degree.university }}</span>
-                    </li>
-                </ul>
+                <li v-for="(degree, idx) in my.degrees" :key="idx" class="flex flex-col mb-5">
+                    <p v-if="degree.graduated" class="font-medium">🎓 {{ degree.grade }}</p>
+                    <p v-else class="font-medium">{{ degree.grade }}</p>
+                    <span class="text-sm">📅 {{ degree.from }} – {{ degree.to }}</span>
+                    <span>🏫 {{ degree.university }}</span>
+                </li>
             </ul>
         </BaseSegment>
 
-        <BaseSegment title="Personality">
-            <ul>
-                <li>- Team working</li>
-                <li>- Flexibility</li>
-                <li>- Creative</li>
-                <li>- Problem Solving</li>
-                <li>- Geek and interested in learning new things</li>
-            </ul>
-        </BaseSegment>
-    </div>
+        <footer class="pt-2 border-t">
+            <p class="flex items-center justify-center space-x-1">
+                <span class="inline-block transform rotate-180">&copy;</span>
+                <a href="https://en.wikipedia.org/wiki/Copyleft">Copyleft</a>
+                <span>2024</span>
+            </p>
+        </footer>
+    </main>
 </template>

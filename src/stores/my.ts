@@ -16,7 +16,7 @@ interface Degree {
     from: string,
     to: string,
     university: string,
-    finished: boolean
+    graduated: boolean
 }
 
 export const useMy = defineStore('my', () => {
@@ -73,9 +73,9 @@ export const useMy = defineStore('my', () => {
             grade: 'Bachelor',
             field: 'Software Engineering',
             from: 'September 2020',
-            to: 'now',
+            to: 'June 2023',
             university: 'Montazeri Technical College of Mashhad',
-            finished: false
+            graduated: true
         },
         {
             grade: 'Associate',
@@ -83,17 +83,18 @@ export const useMy = defineStore('my', () => {
             from: 'September 2017',
             to: 'June 2019',
             university: 'Montazeri Technical College of Mashhad',
-            finished: true
+            graduated: true
         }
     ])
 
     const skills: Array<Array<string>> = reactive([
         ['HTML', 'CSS', 'JavaScript', 'PHP'],
-        ['MySQL', 'MariaDB', 'phpMyAdmin', 'PostgreSQL'],
-        ['Git', 'GitLab', 'GitHub'],
-        ['OOP', 'SOLID', 'Design Pattern', 'MVC', 'Clean Code', 'TDD'],
+        ['GoLang', 'Docker'],
+        ['MySQL', 'PostgreSQL', 'Redis'],
+        ['OOP', 'SOLID', 'Design Pattern', 'MVC', 'TDD'],
         ['Laravel', 'Lumen', 'Composer'],
-        ['Vuejs', 'Tailwind', 'Npm', 'Nuxt'],
+        ['Vuejs', 'Tailwind', 'Inertia', 'Nuxt'],
+        ['Git', 'GitLab', 'GitHub'],
         ['Agile', 'Scrum']
     ])
 
